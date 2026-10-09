@@ -32,7 +32,7 @@ import {
   const ALLOWED_TYPES = ["image/jpeg", "image/png", "image/webp"];
   
   const INPUT_BASE =
-    "h-12 rounded-xl border border-slate-300 text-sm text-slate-800 outline-none transition focus:border-[#ee027e] focus:ring-2 focus:ring-[#ee027e]/10";
+    "h-12 rounded-xl border border-slate-300 text-sm text-slate-800 outline-none transition focus:border-[#0a89ac] focus:ring-2 focus:ring-[#0a89ac]/10";
   
   const INPUT_CLASS = `${INPUT_BASE} w-full px-4`;
   
@@ -388,7 +388,7 @@ import {
           <button
             type="button"
             onClick={openAddDrawer}
-            className="flex shrink-0 items-center gap-2 rounded-xl bg-[#ee027e] px-4 py-3 text-sm font-bold text-white transition hover:bg-[#a50000] sm:px-5"
+            className="flex shrink-0 items-center gap-2 rounded-xl bg-[#0a89ac] px-4 py-3 text-sm font-bold text-white transition hover:bg-[#a50000] sm:px-5"
           >
             <Plus size={18} />
             <span>Add Product</span>
@@ -470,7 +470,7 @@ import {
                           {product.sizes.map((s) => (
                             <span
                               key={s.id}
-                              className="inline-flex whitespace-nowrap rounded-full bg-[#ee027e]/10 px-3 py-1 text-xs font-bold text-[#ee027e]"
+                              className="inline-flex whitespace-nowrap rounded-full bg-[#0a89ac]/10 px-3 py-1 text-xs font-bold text-[#0a89ac]"
                             >
                               {s.size}: ₹{Number(s.price).toLocaleString("en-IN")}
                             </span>
@@ -484,7 +484,7 @@ import {
                             type="button"
                             onClick={() => openEditDrawer(product)}
                             title="Edit"
-                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 transition hover:border-[#ee027e]/30 hover:bg-[#ee027e]/10 hover:text-[#ee027e]"
+                            className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 transition hover:border-[#0a89ac]/30 hover:bg-[#0a89ac]/10 hover:text-[#0a89ac]"
                           >
                             <Pencil size={16} />
                           </button>
@@ -625,7 +625,7 @@ import {
                     <span
                       className={`text-xs font-semibold ${
                         descriptionWords >= MAX_DESCRIPTION_WORDS
-                          ? "text-[#ee027e]"
+                          ? "text-[#0a89ac]"
                           : "text-slate-400"
                       }`}
                     >
@@ -639,7 +639,7 @@ import {
                     disabled={saving}
                     onChange={(e) => setDescription(limitWords(e.target.value))}
                     placeholder="Describe the product in up to 100 words"
-                    className="w-full resize-none rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-[#ee027e] focus:ring-2 focus:ring-[#ee027e]/10 disabled:bg-slate-50"
+                    className="w-full resize-none rounded-xl border border-slate-300 px-4 py-3 text-sm text-slate-800 outline-none transition focus:border-[#0a89ac] focus:ring-2 focus:ring-[#0a89ac]/10 disabled:bg-slate-50"
                   />
                 </div>
   
@@ -653,7 +653,7 @@ import {
                       onClick={addSizeRow}
                       disabled={sizes.length >= MAX_SIZES}
                       title="Add size"
-                      className="flex h-8 items-center gap-1 rounded-lg bg-[#ee027e]/10 px-3 text-xs font-bold text-[#ee027e] transition hover:bg-[#ee027e]/20 disabled:cursor-not-allowed disabled:opacity-40"
+                      className="flex h-8 items-center gap-1 rounded-lg bg-[#0a89ac]/10 px-3 text-xs font-bold text-[#0a89ac] transition hover:bg-[#0a89ac]/20 disabled:cursor-not-allowed disabled:opacity-40"
                     >
                       <Plus size={14} />
                       Add size
@@ -724,7 +724,7 @@ import {
                           type="button"
                           onClick={() => removeExistingImage(image.id)}
                           title="Remove image"
-                          className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-slate-800 text-white hover:bg-[#ee027e]"
+                          className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-slate-800 text-white hover:bg-[#0a89ac]"
                         >
                           <X size={13} />
                         </button>
@@ -742,7 +742,7 @@ import {
                           type="button"
                           onClick={() => removeNewImage(image.key)}
                           title="Remove image"
-                          className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-slate-800 text-white hover:bg-[#ee027e]"
+                          className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-slate-800 text-white hover:bg-[#0a89ac]"
                         >
                           <X size={13} />
                         </button>
@@ -750,7 +750,7 @@ import {
                     ))}
   
                     {totalImages < MAX_IMAGES && (
-                      <label className="flex aspect-square cursor-pointer flex-col items-center justify-center gap-1 rounded-xl border-2 border-dashed border-slate-300 text-slate-400 transition hover:border-[#ee027e] hover:text-[#ee027e]">
+                      <label className="flex aspect-square cursor-pointer flex-col items-center justify-center gap-1 rounded-xl border-2 border-dashed border-slate-300 text-slate-400 transition hover:border-[#0a89ac] hover:text-[#0a89ac]">
                         <ImagePlus size={22} />
                         <span className="text-xs font-semibold">Add</span>
                         <input
@@ -780,7 +780,7 @@ import {
                 <button
                   type="submit"
                   disabled={saving}
-                  className="flex h-12 w-full items-center justify-center rounded-xl bg-[#ee027e] text-sm font-bold text-white transition hover:bg-[#a50000] disabled:cursor-not-allowed disabled:opacity-60"
+                  className="flex h-12 w-full items-center justify-center rounded-xl bg-[#0a89ac] text-sm font-bold text-white transition hover:bg-[#a50000] disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {saving
                     ? editingId

@@ -37,7 +37,7 @@ export const formatOrderDate = (date) => {
   
     doc.setFontSize(18);
     doc.setTextColor(191, 0, 0);
-    doc.text("Wardrobe - Order Details", 40, 50);
+    doc.text("HomeFood - Order Details", 40, 50);
   
     doc.setFontSize(10);
     doc.setTextColor(100);

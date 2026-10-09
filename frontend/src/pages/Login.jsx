@@ -116,11 +116,11 @@ export default function Login({
 
   <img
     src="/vaibhavi.png"
-    alt="Wardrobe"
+    alt="HomeFood"
     className="h-[110px] w-auto max-w-[220px] object-contain"
   />
 
-  <h1 className="mt-3 text-2xl font-black text-[#ee027e]">
+  <h1 className="mt-3 text-2xl font-black text-[#0a89ac]">
     Admin Login
   </h1>
 
@@ -133,7 +133,7 @@ export default function Login({
 
 
           <h1 className="mt-4 text-2xl font-black text-slate-900">
-           wardrobe
+            HomeFood
           </h1>
 
           <p className="mt-1 text-sm text-slate-500">
@@ -169,7 +169,7 @@ export default function Login({
                   e.target.value
                 )
               }
-              className="h-12 w-full rounded-xl border border-slate-300 pl-11 pr-4 outline-none transition focus:border-[#ee027e] focus:ring-2 focus:ring-[#ee027e]/10"
+              className="h-12 w-full rounded-xl border border-slate-300 pl-11 pr-4 outline-none transition focus:border-[#0a89ac] focus:ring-2 focus:ring-[#0a89ac]/10"
               placeholder="Enter admin email"
               
             />
@@ -197,7 +197,7 @@ export default function Login({
                   e.target.value
                 )
               }
-              className="h-12 w-full rounded-xl border border-slate-300 pl-11 pr-4 outline-none transition focus:border-[#ee027e] focus:ring-2 focus:ring-[#ee027e]/10"
+              className="h-12 w-full rounded-xl border border-slate-300 pl-11 pr-4 outline-none transition focus:border-[#0a89ac] focus:ring-2 focus:ring-[#0a89ac]/10"
               // className="h-12 w-full rounded-xl border border-slate-300 pl-11 pr-4 outline-none focus:border-orange-500"
               placeholder="Password"
             />
@@ -217,7 +217,7 @@ export default function Login({
           <button
             type="submit"
             disabled={loading}
-            className="mt-6 h-12 w-full rounded-xl bg-[#ee027e] text-sm font-bold text-white transition hover:bg-[#a50000] disabled:cursor-not-allowed disabled:opacity-60"
+            className="mt-6 h-12 w-full rounded-xl bg-[#0a89ac] text-sm font-bold text-white transition hover:bg-[#a50000] disabled:cursor-not-allowed disabled:opacity-60"
             // className="mt-6 h-12 w-full rounded-xl bg-orange-500 text-sm font-bold text-white transition hover:bg-orange-600 disabled:opacity-60"
           >
 

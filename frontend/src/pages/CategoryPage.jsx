@@ -172,7 +172,7 @@ export default function CategoryPage() {
         <button
           type="button"
           onClick={openAddDrawer}
-          className="flex shrink-0 items-center gap-2 rounded-xl bg-[#ee027e] px-4 py-3 text-sm font-bold text-white transition hover:bg-[#a50000] sm:px-5"
+          className="flex shrink-0 items-center gap-2 rounded-xl bg-[#0a89ac] px-4 py-3 text-sm font-bold text-white transition hover:bg-[#a50000] sm:px-5"
         >
           <Plus size={18} />
           <span>Add Category</span>
@@ -238,7 +238,7 @@ export default function CategoryPage() {
                           type="button"
                           onClick={() => openEditDrawer(category)}
                           title="Edit"
-                          className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 transition hover:border-[#ee027e]/30 hover:bg-[#ee027e]/10 hover:text-[#ee027e]"
+                          className="flex h-9 w-9 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-600 transition hover:border-[#0a89ac]/30 hover:bg-[#0a89ac]/10 hover:text-[#0a89ac]"
                         >
                           <Pencil size={16} />
                         </button>
@@ -314,7 +314,7 @@ export default function CategoryPage() {
                   onChange={(e) => setName(e.target.value)}
                   maxLength={100}
                   placeholder="e.g. Silk"
-                  className="h-12 w-full rounded-xl border border-slate-300 px-4 text-sm text-slate-800 outline-none transition focus:border-[#ee027e] focus:ring-2 focus:ring-[#ee027e]/10"
+                  className="h-12 w-full rounded-xl border border-slate-300 px-4 text-sm text-slate-800 outline-none transition focus:border-[#0a89ac] focus:ring-2 focus:ring-[#0a89ac]/10"
                 />
               </div>
 
@@ -325,7 +325,7 @@ export default function CategoryPage() {
                 </label>
 
                 <label
-                  className={`flex cursor-pointer items-center gap-4 rounded-xl border border-dashed border-slate-300 p-3 transition hover:border-[#ee027e] ${
+                  className={`flex cursor-pointer items-center gap-4 rounded-xl border border-dashed border-slate-300 p-3 transition hover:border-[#0a89ac] ${
                     saving ? "pointer-events-none opacity-60" : ""
                   }`}
                 >
@@ -368,7 +368,7 @@ export default function CategoryPage() {
               <button
                 type="submit"
                 disabled={saving}
-                className="flex h-12 w-full items-center justify-center rounded-xl bg-[#ee027e] text-sm font-bold text-white transition hover:bg-[#a50000] disabled:cursor-not-allowed disabled:opacity-60"
+                className="flex h-12 w-full items-center justify-center rounded-xl bg-[#0a89ac] text-sm font-bold text-white transition hover:bg-[#a50000] disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {saving
                   ? editingId ? "Updating..." : "Saving..."

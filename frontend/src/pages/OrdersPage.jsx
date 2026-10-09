@@ -234,7 +234,7 @@ export default function OrdersPage() {
           type="button"
           onClick={handleDownloadPdf}
           disabled={selectedKeys.length === 0 || downloading}
-          className="flex shrink-0 items-center gap-2 rounded-xl bg-[#ee027e] px-4 py-3 text-sm font-bold text-white transition hover:bg-[#a50000] disabled:cursor-not-allowed disabled:opacity-50 sm:px-5"
+          className="flex shrink-0 items-center gap-2 rounded-xl bg-[#0a89ac] px-4 py-3 text-sm font-bold text-white transition hover:bg-[#a50000] disabled:cursor-not-allowed disabled:opacity-50 sm:px-5"
         >
           <Download size={18} />
           <span>
@@ -270,7 +270,7 @@ export default function OrdersPage() {
                     }}
                     onChange={togglePage}
                     disabled={pageKeys.length === 0}
-                    className="h-4 w-4 cursor-pointer accent-[#ee027e]"
+                    className="h-4 w-4 cursor-pointer accent-[#0a89ac]"
                   />
                 </th>
                 <th className={`min-w-[100px] ${TH_CLASS}`}>Order ID</th>
@@ -300,7 +300,7 @@ export default function OrdersPage() {
                     <tr
                       key={order.rowKey}
                       className={`border-t border-slate-100 transition ${
-                        selected ? "bg-[#ee027e]/5" : "hover:bg-slate-50/70"
+                        selected ? "bg-[#0a89ac]/5" : "hover:bg-slate-50/70"
                       }`}
                     >
                       <td className="px-5 py-4">
@@ -309,7 +309,7 @@ export default function OrdersPage() {
                           aria-label={`Select order ${order.orderId}`}
                           checked={selected}
                           onChange={() => toggleRow(order.rowKey)}
-                          className="h-4 w-4 cursor-pointer accent-[#ee027e]"
+                          className="h-4 w-4 cursor-pointer accent-[#0a89ac]"
                         />
                       </td>
 
@@ -336,7 +336,7 @@ export default function OrdersPage() {
                       </td>
 
                       <td className="whitespace-nowrap px-5 py-4">
-                        <span className="inline-flex rounded-full bg-[#ee027e]/10 px-3 py-1 text-xs font-semibold text-[#ee027e]">
+                        <span className="inline-flex rounded-full bg-[#0a89ac]/10 px-3 py-1 text-xs font-semibold text-[#0a89ac]">
                           {order.portion}
                         </span>
                       </td>

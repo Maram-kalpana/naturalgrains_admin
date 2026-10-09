@@ -1,6 +1,7 @@
 import {
   ClipboardList,
   Package,
+  Settings,
   Tags,
   X,
 } from "lucide-react";
@@ -19,8 +20,8 @@ export default function Sidebar({
   const navClass = (page) =>
     `mb-2 flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold transition ${
       activePage === page
-        ? "bg-[#ee027e]/10 text-[#ee027e]"
-        : "text-slate-600 hover:bg-[#ee027e]/5 hover:text-[#ee027e]"
+        ? "bg-[#0a89ac]/10 text-[#0a89ac]"
+        : "text-slate-600 hover:bg-[#0a89ac]/5 hover:text-[#0a89ac]"
     }`;
 
   return (
@@ -50,7 +51,7 @@ export default function Sidebar({
           <div className="flex items-center gap-3">
             <img
               src="/vaibhavi.png"
-              alt="Wardrobe"
+              alt="HomeFood"
               className="h-[68px] w-auto max-w-[230px] object-contain"
             />
           </div>
@@ -83,6 +84,19 @@ export default function Sidebar({
           <button type="button" onClick={() => openPage("orders")} className={navClass("orders")}>
             <ClipboardList size={19} />
             Orders
+          </button>
+          <button
+            type="button"
+            onClick={() =>
+              openPage("settings")
+            }
+            className={
+              navClass("settings")
+            }
+          >
+            <Settings size={19} />
+
+            Settings
           </button>
         </nav>
       </aside>

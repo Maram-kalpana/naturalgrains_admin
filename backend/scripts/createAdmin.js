@@ -21,7 +21,7 @@ const createAdmin =
         "admin";
 
       const email =
-        "admin@thewardrobe.com";
+        "admin@thehomefood.com";
 
       const password =
         "admin123";

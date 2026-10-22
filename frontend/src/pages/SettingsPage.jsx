@@ -27,7 +27,7 @@ import {
    BRAND
 ========================================================= */
 
-const BRAND_COLOR = "#0a89ac";
+const BRAND_COLOR = "#1E5B34";
 const BRAND_DARK = "#d60272";
 
 
@@ -61,13 +61,13 @@ const Toggle = ({
         duration-300
         focus:outline-none
         focus:ring-4
-        focus:ring-[#0a89ac]/10
+        focus:ring-[#1E5B34]/10
         disabled:cursor-not-allowed
         disabled:opacity-60
 
         ${
           enabled
-            ? "bg-[#0a89ac]"
+            ? "bg-[#1E5B34]"
             : "bg-slate-200"
         }
       `}
@@ -148,10 +148,10 @@ const Field = ({
 
           hover:border-slate-300
 
-          focus:border-[#0a89ac]
+          focus:border-[#1E5B34]
           focus:bg-white
           focus:ring-4
-          focus:ring-[#0a89ac]/10
+          focus:ring-[#1E5B34]/10
 
           disabled:cursor-not-allowed
           disabled:bg-slate-100
@@ -222,10 +222,10 @@ const SecretField = ({
 
             hover:border-slate-300
 
-            focus:border-[#0a89ac]
+            focus:border-[#1E5B34]
             focus:bg-white
             focus:ring-4
-            focus:ring-[#0a89ac]/10
+            focus:ring-[#1E5B34]/10
 
             disabled:cursor-not-allowed
             disabled:bg-slate-100
@@ -254,8 +254,8 @@ const SecretField = ({
             text-slate-400
             transition
 
-            hover:bg-[#0a89ac]/5
-            hover:text-[#0a89ac]
+            hover:bg-[#1E5B34]/5
+            hover:text-[#1E5B34]
           "
         >
           {show ? (
@@ -313,8 +313,8 @@ const IntegrationHeader = ({
             items-center
             justify-center
             rounded-lg
-            bg-[#0a89ac]/10
-            text-[#0a89ac]
+            bg-[#1E5B34]/10
+            text-[#1E5B34]
           "
         >
           <Icon size={18} />
@@ -344,14 +344,14 @@ const IntegrationHeader = ({
               <span
                 className="
                   rounded-full
-                  bg-[#0a89ac]/10
+                  bg-[#1E5B34]/10
                   px-2
                   py-0.5
                   text-[9px]
                   font-bold
                   uppercase
                   tracking-wide
-                  text-[#0a89ac]
+                  text-[#1E5B34]
                 "
               >
                 Enabled
@@ -755,7 +755,7 @@ export default function SettingsPage() {
             className="
               mx-auto
               animate-spin
-              text-[#0a89ac]
+              text-[#1E5B34]
             "
           />
 
@@ -812,7 +812,7 @@ export default function SettingsPage() {
             sm:text-[13px]
           "
         >
-          Manage payment and shipping settings for The HomeFood.
+          Manage payment and shipping settings for The NaturalGrains.
         </p>
       </div>
 
@@ -903,7 +903,7 @@ export default function SettingsPage() {
               shadow-[0_1px_2px_rgba(15,23,42,0.03)]
               transition
 
-              hover:border-[#0a89ac]/20
+              hover:border-[#1E5B34]/20
               hover:shadow-sm
             "
           >
@@ -1021,9 +1021,9 @@ export default function SettingsPage() {
                     text-slate-700
                     transition-all
 
-                    hover:border-[#0a89ac]/40
-                    hover:bg-[#0a89ac]/5
-                    hover:text-[#0a89ac]
+                    hover:border-[#1E5B34]/40
+                    hover:bg-[#1E5B34]/5
+                    hover:text-[#1E5B34]
 
                     disabled:cursor-not-allowed
                     disabled:opacity-60
@@ -1085,7 +1085,7 @@ export default function SettingsPage() {
               shadow-[0_1px_2px_rgba(15,23,42,0.03)]
               transition
 
-              hover:border-[#0a89ac]/20
+              hover:border-[#1E5B34]/20
               hover:shadow-sm
             "
           >
@@ -1246,9 +1246,9 @@ export default function SettingsPage() {
                     text-slate-700
                     transition-all
 
-                    hover:border-[#0a89ac]/40
-                    hover:bg-[#0a89ac]/5
-                    hover:text-[#0a89ac]
+                    hover:border-[#1E5B34]/40
+                    hover:bg-[#1E5B34]/5
+                    hover:text-[#1E5B34]
 
                     disabled:cursor-not-allowed
                     disabled:opacity-60
@@ -1323,7 +1323,7 @@ export default function SettingsPage() {
                 justify-center
                 gap-2
                 rounded-lg
-                bg-[#0a89ac]
+                bg-[#1E5B34]
                 px-6
                 text-xs
                 font-semibold
@@ -1336,7 +1336,7 @@ export default function SettingsPage() {
 
                 focus:outline-none
                 focus:ring-4
-                focus:ring-[#0a89ac]/20
+                focus:ring-[#1E5B34]/20
 
                 disabled:cursor-not-allowed
                 disabled:opacity-60

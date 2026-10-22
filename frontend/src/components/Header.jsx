@@ -44,11 +44,11 @@ export default function Header({
           <div>
 
             <h1 className="text-[17px] font-extrabold text-slate-900 sm:text-xl">
-               HomeFood Admin
+               Natural Grains Admin
             </h1>
 
             <p className="hidden text-xs text-slate-400 sm:block">
-              HomeFood Management
+              Natural Grains Management
             </p>
 
           </div>
@@ -60,7 +60,7 @@ export default function Header({
         <button
           type="button"
           onClick={onLogout}
-          className="flex items-center gap-2 rounded-lg border border-[#0a89ac]/20 px-3 py-2 text-sm font-semibold text-[#0a89ac] transition hover:border-[#0a89ac] hover:bg-[#0a89ac]/10 sm:px-4"
+          className="flex items-center gap-2 rounded-lg border border-[#1E5B34]/20 px-3 py-2 text-sm font-semibold text-[#1E5B34] transition hover:border-[#1E5B34] hover:bg-[#1E5B34]/10 sm:px-4"
           // className="flex items-center gap-2 rounded-lg border border-slate-200 px-3 py-2 text-sm font-semibold text-slate-600 transition hover:border-red-200 hover:bg-red-50 hover:text-red-600 sm:px-4"
         >
 

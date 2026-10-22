@@ -20,8 +20,8 @@ export default function Sidebar({
   const navClass = (page) =>
     `mb-2 flex w-full items-center gap-3 rounded-xl px-4 py-3 text-left text-sm font-semibold transition ${
       activePage === page
-        ? "bg-[#0a89ac]/10 text-[#0a89ac]"
-        : "text-slate-600 hover:bg-[#0a89ac]/5 hover:text-[#0a89ac]"
+        ? "bg-[#1E5B34]/10 text-[#1E5B34]"
+        : "text-slate-600 hover:bg-[#1E5B34]/5 hover:text-[#1E5B34]"
     }`;
 
   return (
@@ -51,7 +51,7 @@ export default function Sidebar({
           <div className="flex items-center gap-3">
             <img
               src="/vaibhavi.png"
-              alt="HomeFood"
+              alt="Natural Grains Admin"
               className="h-[68px] w-auto max-w-[230px] object-contain"
             />
           </div>

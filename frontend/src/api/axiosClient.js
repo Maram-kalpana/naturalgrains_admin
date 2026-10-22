@@ -1,100 +1,45 @@
 import axios from "axios";
 
+const axiosClient = axios.create({
+  baseURL:
+    import.meta.env.VITE_API_BASE_URL ||
+    // "http://localhost:5000/api",
+    "https://naturalgrains-api.easybizcart.com/api",
 
-const axiosClient =
-  axios.create({
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
 
-    baseURL:
-      import.meta.env
-        .VITE_API_BASE_URL,
+  timeout: 15000,
+});
 
-    headers: {
-      "Content-Type":
-        "application/json",
-    },
+/* ADD JWT */
 
-    timeout:
-      15000,
+axiosClient.interceptors.request.use(
+  (config) => {
+    const token = localStorage.getItem("admin_token");
 
-  });
-
-
-/* =========================================
-   ADD JWT
-========================================= */
-
-axiosClient.interceptors
-  .request
-  .use(
-
-    (config) => {
-
-      const token =
-        localStorage.getItem(
-          "admin_token"
-        );
-
-
-      if (token) {
-
-        config.headers.Authorization =
-          `Bearer ${token}`;
-
-      }
-
-
-      return config;
-
-    },
-
-    (error) =>
-      Promise.reject(
-        error
-      )
-
-  );
-
-
-/* =========================================
-   RESPONSE
-========================================= */
-
-axiosClient.interceptors
-  .response
-  .use(
-
-    (response) =>
-      response,
-
-    (error) => {
-
-      /*
-       * Only logout when actual
-       * authentication fails.
-       *
-       * 500 SQL error vachinappudu
-       * logout avvakudadhu.
-       */
-
-      if (
-        error.response
-          ?.status === 401
-      ) {
-
-        localStorage.removeItem(
-          "admin_token"
-        );
-
-      }
-
-
-      return Promise.reject(
-        error
-      );
-
+    if (token) {
+      config.headers.Authorization = `Bearer ${token}`;
     }
 
-  );
+    return config;
+  },
+  (error) => Promise.reject(error)
+);
 
+/* RESPONSE */
+
+axiosClient.interceptors.response.use(
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      localStorage.removeItem("admin_token");
+    }
+
+    return Promise.reject(error);
+  }
+);
 
 export default axiosClient;
